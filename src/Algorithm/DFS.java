@@ -1,47 +1,46 @@
 package Algorithm;
 
 import java.util.EmptyStackException;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.Stack;
 
 import model.Direction;
 import model.Node;
 
-public class BFS {
-
+public class DFS {
+	
 	private Direction[] searchScheme;
-    private Queue<Node> fifo;
+    private Stack<Node> lifo;
     private Node workingNode;
-	private int iterator =0;
-    public BFS(Direction[] searchScheme) {
+	private int iterator=0;
+	
+    public DFS(Direction[] searchScheme) {
 		super();
 		this.searchScheme = searchScheme;
-		this.fifo = new LinkedList<Node>();
+		this.lifo = new Stack<Node>();
 	}
 
 	public void addInitialNode(Node node){
-    	fifo.add(node);
+    	lifo.add(node);
     }
     
-	
 	public void FindSoultionWithoutRecursion(){
 		boolean condition = false;
-		
 		while(condition==false){
-			int wot = FindSoultionByBFSnonRecursive();
+			int wot = FindSoultionByDFSnonRecursive();
 			System.out.println("wot = " + wot);
 			if (wot==0)
 				condition=true;
 		}
 	}
 	
-    public int FindSoultionByBFSnonRecursive(){
+    public int FindSoultionByDFSnonRecursive(){
     	iterator++;
     	System.out.println("Wywoluje sie po raz " + iterator);
     	try{
-    	workingNode=fifo.remove();
+    	workingNode=lifo.pop();
     	}
-    	catch(EmptyStackException e){
+    	catch(EmptyStackException e)
+    	{
     		return 3;
     	}
     	System.out.println("OTO JA, WEZEL");
@@ -56,7 +55,7 @@ public class BFS {
     	}
     	else if(workingNode.getDeep()==5)
     	{
-    		System.out.println("Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania ide dalej");
+    		System.out.println("Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam");
     		return 1;
     	}
     	else
@@ -66,16 +65,16 @@ public class BFS {
     		for(Node node : workingNode.getBranches()){
     			node.getNode().printBoard();
     			System.out.println();
-    			fifo.add(node);
+    			lifo.add(node);
     		}
     		return 2;
     	}
     }
 	
-    public int FindSoultionByBFS(){
+    public int FindSoultionByDFS(){
     	iterator++;
     	System.out.println("Wywoluje sie po raz " + iterator);
-    	workingNode=fifo.remove();
+    	workingNode=lifo.pop();
     	System.out.println("OTO JA, WEZEL");
     	workingNode.getNode().printBoard();
     	System.out.println("Jestem na glebokosci " + workingNode.getDeep());
@@ -86,10 +85,10 @@ public class BFS {
     		workingNode.getNode().printBoard();
     		return 0;
     	}
-    	else if(workingNode.getDeep()==20)
+    	else if(workingNode.getDeep()==3)
     	{
-        	System.out.println("Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania ide dalej");
-        	FindSoultionByBFS();
+    		System.out.println("Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam");
+    		FindSoultionByDFS();
     	}
     	else
     	{
@@ -98,11 +97,11 @@ public class BFS {
     		for(Node node : workingNode.getBranches()){
     			node.getNode().printBoard();
     			System.out.println();
-    			fifo.add(node);
+    			lifo.add(node);
     		}
-    		FindSoultionByBFS();
+    		FindSoultionByDFS();
     	}
     	return 0;
     }
-	
+    
 }

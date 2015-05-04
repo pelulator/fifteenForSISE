@@ -39,7 +39,7 @@ public class Node {
 				boardToAdd.changeByDirection(dir);
 				Branches.add(new Node(boardToAdd,deep+1));
 			} catch (WrongDirectionException e) {
-				System.out.println("This node isn't exist");
+				System.out.println("Wezel nie istnieje");
 			}
 		}
 	}
