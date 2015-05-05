@@ -32,12 +32,17 @@ public class Node {
 		Node = new Board(node.getBoard());
 	}
 	
+	public void clearBranches(){
+		Branches.clear();
+	}
+	
 	public void CreateBranchesByScheme(Direction[] scheme){
 		for (Direction dir : scheme){
 			Board boardToAdd = new Board(this.Node.getBoard());
 			try {
 				boardToAdd.changeByDirection(dir);
 				Branches.add(new Node(boardToAdd,deep+1));
+				System.out.println("Wezel dodany, mam ich " + Branches.size());
 			} catch (WrongDirectionException e) {
 				System.out.println("Wezel nie istnieje");
 			}

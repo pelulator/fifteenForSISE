@@ -5,18 +5,20 @@ import java.util.Stack;
 import model.Direction;
 import model.Node;
 
-public class IDFS {
+public class AStarIDFS {
 
 	private Direction[] searchScheme;
     private Stack<Node> lifo;
     private Node workingNode;
     private Node initialNode;
 	private int iterator=0;
+	private HeuristicStrategy algorithm;
 	
-    public IDFS(Direction[] searchScheme) {
+    public AStarIDFS(Direction[] searchScheme, HeuristicStrategy heuristicStrategy) {
 		super();
 		this.searchScheme = searchScheme;
 		this.lifo = new Stack<Node>();
+		algorithm = heuristicStrategy;
 	}
     
     public void addInitialNode(Node node){
@@ -75,9 +77,9 @@ public class IDFS {
     	}
     	else
     	{
-    		System.out.println("OTO MOJE GALEZIE");
+    		System.out.println("OTO MOJE GALEZIE PO WYBRANIU NAJLEPSZYCH NAJPIERW");
     		workingNode.CreateBranchesByScheme(searchScheme);
-    		for(Node node : workingNode.getBranches()){
+    		for(Node node : algorithm.findSchemeByHeuristic(workingNode.getBranches())){
     			node.getNode().printBoard();
     			System.out.println();
     			lifo.add(node);

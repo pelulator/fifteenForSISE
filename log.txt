@@ -1,0 +1,354 @@
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 13 14 15 
+Wywoluje sie po raz 1
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 13 14 15 
+Jestem na glebokosci 1
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+Nie ma wiecej wezlow do sprawdzenia
+wot = 3
+Wywoluje sie po raz 2
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 13 14 15 
+Jestem na glebokosci 1
+
+OTO MOJE GALEZIE
+Wezel nie istnieje
+Wezel dodany, mam ich 1
+Wezel dodany, mam ich 2
+Wezel nie istnieje
+1 2 3 4 
+5 6 7 8 
+0 10 11 12 
+9 13 14 15 
+
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 0 14 15 
+
+wot = 2
+Wywoluje sie po raz 3
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 0 14 15 
+Jestem na glebokosci 2
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+wot = 1
+Wywoluje sie po raz 4
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+0 10 11 12 
+9 13 14 15 
+Jestem na glebokosci 2
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+Nie ma wiecej wezlow do sprawdzenia
+wot = 3
+Wywoluje sie po raz 5
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 13 14 15 
+Jestem na glebokosci 1
+
+OTO MOJE GALEZIE
+Wezel nie istnieje
+Wezel dodany, mam ich 1
+Wezel dodany, mam ich 2
+Wezel nie istnieje
+1 2 3 4 
+5 6 7 8 
+0 10 11 12 
+9 13 14 15 
+
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 0 14 15 
+
+wot = 2
+Wywoluje sie po raz 6
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 0 14 15 
+Jestem na glebokosci 2
+
+OTO MOJE GALEZIE
+Wezel nie istnieje
+Wezel dodany, mam ich 1
+Wezel dodany, mam ich 2
+Wezel dodany, mam ich 3
+1 2 3 4 
+5 6 7 8 
+9 0 11 12 
+13 10 14 15 
+
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 0 15 
+
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 13 14 15 
+
+wot = 2
+Wywoluje sie po raz 7
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 13 14 15 
+Jestem na glebokosci 3
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+wot = 1
+Wywoluje sie po raz 8
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 0 15 
+Jestem na glebokosci 3
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+wot = 1
+Wywoluje sie po raz 9
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 0 11 12 
+13 10 14 15 
+Jestem na glebokosci 3
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+wot = 1
+Wywoluje sie po raz 10
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+0 10 11 12 
+9 13 14 15 
+Jestem na glebokosci 2
+
+OTO MOJE GALEZIE
+Wezel dodany, mam ich 1
+Wezel dodany, mam ich 2
+Wezel dodany, mam ich 3
+Wezel nie istnieje
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 13 14 15 
+
+1 2 3 4 
+0 6 7 8 
+5 10 11 12 
+9 13 14 15 
+
+1 2 3 4 
+5 6 7 8 
+10 0 11 12 
+9 13 14 15 
+
+wot = 2
+Wywoluje sie po raz 11
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+10 0 11 12 
+9 13 14 15 
+Jestem na glebokosci 3
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+wot = 1
+Wywoluje sie po raz 12
+OTO JA, WEZEL
+1 2 3 4 
+0 6 7 8 
+5 10 11 12 
+9 13 14 15 
+Jestem na glebokosci 3
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+wot = 1
+Wywoluje sie po raz 13
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 13 14 15 
+Jestem na glebokosci 3
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+Nie ma wiecej wezlow do sprawdzenia
+wot = 3
+Wywoluje sie po raz 14
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 13 14 15 
+Jestem na glebokosci 1
+
+OTO MOJE GALEZIE
+Wezel nie istnieje
+Wezel dodany, mam ich 1
+Wezel dodany, mam ich 2
+Wezel nie istnieje
+1 2 3 4 
+5 6 7 8 
+0 10 11 12 
+9 13 14 15 
+
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 0 14 15 
+
+wot = 2
+Wywoluje sie po raz 15
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 0 14 15 
+Jestem na glebokosci 2
+
+OTO MOJE GALEZIE
+Wezel nie istnieje
+Wezel dodany, mam ich 1
+Wezel dodany, mam ich 2
+Wezel dodany, mam ich 3
+1 2 3 4 
+5 6 7 8 
+9 0 11 12 
+13 10 14 15 
+
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 0 15 
+
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 13 14 15 
+
+wot = 2
+Wywoluje sie po raz 16
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 13 14 15 
+Jestem na glebokosci 3
+
+OTO MOJE GALEZIE
+Wezel nie istnieje
+Wezel dodany, mam ich 1
+Wezel dodany, mam ich 2
+Wezel nie istnieje
+1 2 3 4 
+5 6 7 8 
+0 10 11 12 
+9 13 14 15 
+
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 0 14 15 
+
+wot = 2
+Wywoluje sie po raz 17
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 0 14 15 
+Jestem na glebokosci 4
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+wot = 1
+Wywoluje sie po raz 18
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+0 10 11 12 
+9 13 14 15 
+Jestem na glebokosci 4
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+wot = 1
+Wywoluje sie po raz 19
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 0 15 
+Jestem na glebokosci 3
+
+OTO MOJE GALEZIE
+Wezel nie istnieje
+Wezel dodany, mam ich 1
+Wezel dodany, mam ich 2
+Wezel dodany, mam ich 3
+1 2 3 4 
+5 6 7 8 
+9 10 0 12 
+13 14 11 15 
+
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 15 0 
+
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 0 14 15 
+
+wot = 2
+Wywoluje sie po raz 20
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 0 14 15 
+Jestem na glebokosci 4
+
+Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania, wracam
+wot = 1
+Wywoluje sie po raz 21
+OTO JA, WEZEL
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 15 0 
+Jestem na glebokosci 4
+
+Jest KONIEC, paczaj jak wygl¹dam:
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 15 0 
+wot = 0
+Czas wykonania to: 8768456nanosekund

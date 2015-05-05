@@ -1,20 +1,21 @@
 package Algorithm;
 
-import java.util.EmptyStackException;
 import java.util.LinkedList;
 import java.util.Queue;
 
 import model.Direction;
 import model.Node;
 
-public class BFS {
-
+public class AStarBFS {
 	private Direction[] searchScheme;
     private Queue<Node> fifo;
     private Node workingNode;
 	private int iterator =0;
-    public BFS(Direction[] searchScheme) {
+	private HeuristicStrategy algorithm;
+	
+    public AStarBFS(Direction[] searchScheme, HeuristicStrategy heuristicStrategy) {
 		super();
+		algorithm = heuristicStrategy;
 		this.searchScheme = searchScheme;
 		this.fifo = new LinkedList<Node>();
 	}
@@ -24,7 +25,7 @@ public class BFS {
     }
     
 	
-	public void FindSoultionWithoutRecursion(){
+	public void FindSoultionWithoutRecursionByBFS(){
 		boolean condition = false;
 		
 		while(condition==false){
@@ -38,12 +39,9 @@ public class BFS {
     public int FindSoultionByBFSnonRecursive(){
     	iterator++;
     	System.out.println("Wywoluje sie po raz " + iterator);
-    	try{
+    	
     	workingNode=fifo.remove();
-    	}
-    	catch(EmptyStackException e){
-    		return 3;
-    	}
+    	
     	System.out.println("OTO JA, WEZEL");
     	workingNode.getNode().printBoard();
     	System.out.println("Jestem na glebokosci " + workingNode.getDeep());
@@ -54,16 +52,16 @@ public class BFS {
     		workingNode.getNode().printBoard();
     		return 0;
     	}
-//    	else if(workingNode.getDeep()==4)
+//    	else if(workingNode.getDeep()==200)
 //    	{
 //    		System.out.println("Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania ide dalej");
 //    		return 1;
 //    	}
     	else
     	{
-    		System.out.println("OTO MOJE GALEZIE");
+    		System.out.println("OTO MOJE GALEZIE PO WYBRANIU NAJLEPSZYCH NAJPIERW");
     		workingNode.CreateBranchesByScheme(searchScheme);
-    		for(Node node : workingNode.getBranches()){
+    		for(Node node : algorithm.findSchemeByHeuristic(workingNode.getBranches())){
     			node.getNode().printBoard();
     			System.out.println();
     			fifo.add(node);
@@ -71,38 +69,7 @@ public class BFS {
     		return 2;
     	}
     }
-	
-    public int FindSoultionByBFS(){
-    	iterator++;
-    	System.out.println("Wywoluje sie po raz " + iterator);
-    	workingNode=fifo.remove();
-    	System.out.println("OTO JA, WEZEL");
-    	workingNode.getNode().printBoard();
-    	System.out.println("Jestem na glebokosci " + workingNode.getDeep());
-    	System.out.println();
-    	if(workingNode.amILastNode()==true)
-    	{
-    		System.out.println("Jest KONIEC, paczaj jak wygl¹dam:");
-    		workingNode.getNode().printBoard();
-    		return 0;
-    	}
-    	else if(workingNode.getDeep()==20)
-    	{
-        	System.out.println("Jestem na odpowiedniej glebokosci, nie ma tutaj rozwiazania ide dalej");
-        	FindSoultionByBFS();
-    	}
-    	else
-    	{
-    		System.out.println("OTO MOJE GALEZIE");
-    		workingNode.CreateBranchesByScheme(searchScheme);
-    		for(Node node : workingNode.getBranches()){
-    			node.getNode().printBoard();
-    			System.out.println();
-    			fifo.add(node);
-    		}
-    		FindSoultionByBFS();
-    	}
-    	return 0;
-    }
-	
+    
+    
+    
 }
