@@ -11,11 +11,14 @@ public class DFS {
     private Stack<Node> lifo;
     private Node workingNode;
 	private int iterator=0;
-	
+	public int przetworzone;
+	public int odwiedzone;
     public DFS(Direction[] searchScheme) {
 		super();
 		this.searchScheme = searchScheme;
 		this.lifo = new Stack<Node>();
+		przetworzone=0;
+		odwiedzone=0;
 	}
 
 	public void addInitialNode(Node node){
@@ -36,6 +39,7 @@ public class DFS {
     	iterator++;
     	System.out.println("Wywoluje sie po raz " + iterator);
     	workingNode=lifo.pop();
+    	odwiedzone++;
     	System.out.println("OTO JA, WEZEL");
     	workingNode.getNode().printBoard();
     	System.out.println("Jestem na glebokosci " + workingNode.getDeep());
@@ -91,6 +95,7 @@ public class DFS {
     			node.getNode().printBoard();
     			System.out.println();
     			lifo.add(node);
+    			przetworzone++;
     		}
     		FindSoultionByDFS();
     	}

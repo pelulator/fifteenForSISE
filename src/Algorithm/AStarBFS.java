@@ -12,12 +12,16 @@ public class AStarBFS {
     private Node workingNode;
 	private int iterator =0;
 	private HeuristicStrategy algorithm;
+	public int przetworzone;
+	public int odwiedzone;
 	
     public AStarBFS(Direction[] searchScheme, HeuristicStrategy heuristicStrategy) {
 		super();
 		algorithm = heuristicStrategy;
 		this.searchScheme = searchScheme;
 		this.fifo = new LinkedList<Node>();
+		przetworzone=0;
+		odwiedzone=0;
 	}
 
 	public void addInitialNode(Node node){
@@ -41,7 +45,7 @@ public class AStarBFS {
     	System.out.println("Wywoluje sie po raz " + iterator);
     	
     	workingNode=fifo.remove();
-    	
+    	odwiedzone++;
     	System.out.println("OTO JA, WEZEL");
     	workingNode.getNode().printBoard();
     	System.out.println("Jestem na glebokosci " + workingNode.getDeep());
@@ -64,6 +68,7 @@ public class AStarBFS {
     		for(Node node : algorithm.findSchemeByHeuristic(workingNode.getBranches())){
     			node.getNode().printBoard();
     			System.out.println();
+    			przetworzone++;
     			fifo.add(node);
     		}
     		return 2;

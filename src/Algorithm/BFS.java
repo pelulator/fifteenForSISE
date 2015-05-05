@@ -13,10 +13,14 @@ public class BFS {
     private Queue<Node> fifo;
     private Node workingNode;
 	private int iterator =0;
+	public int przetworzone;
+	public int odwiedzone;
     public BFS(Direction[] searchScheme) {
 		super();
 		this.searchScheme = searchScheme;
 		this.fifo = new LinkedList<Node>();
+		przetworzone=0;
+		odwiedzone=0;
 	}
 
 	public void addInitialNode(Node node){
@@ -40,6 +44,7 @@ public class BFS {
     	System.out.println("Wywoluje sie po raz " + iterator);
     	try{
     	workingNode=fifo.remove();
+    	odwiedzone++;
     	}
     	catch(EmptyStackException e){
     		return 3;
@@ -66,6 +71,7 @@ public class BFS {
     		for(Node node : workingNode.getBranches()){
     			node.getNode().printBoard();
     			System.out.println();
+    			przetworzone++;
     			fifo.add(node);
     		}
     		return 2;

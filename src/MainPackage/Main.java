@@ -97,6 +97,8 @@ public class Main {
 			endTime = System.nanoTime();
 			time = (endTime - startTime);
 			System.out.println("Czas wykonania to: " + time + "nanosekund");
+			System.out.println("Stany przetworzone to: " + testBFS.przetworzone);
+			System.out.println("Stany odwiedzone to: " + testBFS.odwiedzone);
 			break;
 		case "-d":
 		case "--dfs":
@@ -109,6 +111,8 @@ public class Main {
 			endTime = System.nanoTime();
 			time = (endTime - startTime);
 			System.out.println("Czas wykonania to: " + time + "nanosekund");
+			System.out.println("Stany przetworzone to: " + testBFS2.przetworzone);
+			System.out.println("Stany odwiedzone to: " + testBFS2.odwiedzone);
 			break;
 		case "-i":
 		case "--idfs":
@@ -121,6 +125,8 @@ public class Main {
 			endTime = System.nanoTime();
 			time = (endTime - startTime);
 			System.out.println("Czas wykonania to: " + time + "nanosekund");
+			System.out.println("Stany przetworzone to: " + testBFS3.przetworzone);
+			System.out.println("Stany odwiedzone to: " + testBFS3.odwiedzone);
 			break;
 		case "-a":
 		case "--a":
@@ -137,6 +143,8 @@ public class Main {
 						endTime = System.nanoTime();
 						time = (endTime - startTime);
 						System.out.println("Czas wykonania to: " + time + "nanosekund");
+						System.out.println("Stany przetworzone to: " + testAStar.przetworzone);
+						System.out.println("Stany odwiedzone to: " + testAStar.odwiedzone);
 						break;
 					case "-lc":
 						testNode = new Node(testBoard,1);
@@ -147,6 +155,8 @@ public class Main {
 						endTime = System.nanoTime();
 						time = (endTime - startTime);
 						System.out.println("Czas wykonania to: " + time + "nanosekund");
+						System.out.println("Stany przetworzone to: " + testAStar2.przetworzone);
+						System.out.println("Stany odwiedzone to: " + testAStar2.odwiedzone);
 						break;
 					default:
 						System.out.println("Poprawne uzycie programu to: ");
@@ -170,6 +180,8 @@ public class Main {
 						endTime = System.nanoTime();
 						time = (endTime - startTime);
 						System.out.println("Czas wykonania to: " + time + "nanosekund");
+						System.out.println("Stany przetworzone to: " + testAStar2.przetworzone);
+						System.out.println("Stany odwiedzone to: " + testAStar2.odwiedzone);
 						break;
 					case "-lc":
 						testNode = new Node(testBoard,1);
@@ -180,6 +192,8 @@ public class Main {
 						endTime = System.nanoTime();
 						time = (endTime - startTime);
 						System.out.println("Czas wykonania to: " + time + "nanosekund");
+						System.out.println("Stany przetworzone to: " + testAStar.przetworzone);
+						System.out.println("Stany odwiedzone to: " + testAStar.odwiedzone);
 						break;
 					default:
 						System.out.println("Poprawne uzycie programu to: ");
@@ -203,6 +217,8 @@ public class Main {
 						endTime = System.nanoTime();
 						time = (endTime - startTime);
 						System.out.println("Czas wykonania to: " + time + "nanosekund");
+						System.out.println("Stany przetworzone to: " + testAStar2.przetworzone);
+						System.out.println("Stany odwiedzone to: " + testAStar2.odwiedzone);
 						break;
 					case "-lc":
 						testNode = new Node(testBoard,1);
@@ -213,6 +229,8 @@ public class Main {
 						endTime = System.nanoTime();
 						time = (endTime - startTime);
 						System.out.println("Czas wykonania to: " + time + "nanosekund");
+						System.out.println("Stany przetworzone to: " + testAStar.przetworzone);
+						System.out.println("Stany odwiedzone to: " + testAStar.odwiedzone);
 						break;
 					default:
 						System.out.println("Poprawne uzycie programu to: ");

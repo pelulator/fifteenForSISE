@@ -12,11 +12,15 @@ public class IDFS {
     private Node workingNode;
     private Node initialNode;
 	private int iterator=0;
+	public int przetworzone;
+	public int odwiedzone;
 	
     public IDFS(Direction[] searchScheme) {
 		super();
 		this.searchScheme = searchScheme;
 		this.lifo = new Stack<Node>();
+		przetworzone=0;
+		odwiedzone=0;
 	}
     
     public void addInitialNode(Node node){
@@ -52,7 +56,7 @@ public class IDFS {
     	System.out.println("Wywoluje sie po raz " + iterator);
 
     	workingNode=lifo.pop();
-
+    	odwiedzone++;
     	System.out.println("OTO JA, WEZEL");
     	workingNode.getNode().printBoard();
     	System.out.println("Jestem na glebokosci " + workingNode.getDeep());
@@ -80,6 +84,7 @@ public class IDFS {
     		for(Node node : workingNode.getBranches()){
     			node.getNode().printBoard();
     			System.out.println();
+    			przetworzone++;
     			lifo.add(node);
     		}
     		return 2;

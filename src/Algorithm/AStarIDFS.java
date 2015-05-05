@@ -13,12 +13,15 @@ public class AStarIDFS {
     private Node initialNode;
 	private int iterator=0;
 	private HeuristicStrategy algorithm;
-	
+	public int przetworzone;
+	public int odwiedzone;
     public AStarIDFS(Direction[] searchScheme, HeuristicStrategy heuristicStrategy) {
 		super();
 		this.searchScheme = searchScheme;
 		this.lifo = new Stack<Node>();
 		algorithm = heuristicStrategy;
+		przetworzone=0;
+		odwiedzone=0;
 	}
     
     public void addInitialNode(Node node){
@@ -54,7 +57,7 @@ public class AStarIDFS {
     	System.out.println("Wywoluje sie po raz " + iterator);
 
     	workingNode=lifo.pop();
-
+    	odwiedzone++;
     	System.out.println("OTO JA, WEZEL");
     	workingNode.getNode().printBoard();
     	System.out.println("Jestem na glebokosci " + workingNode.getDeep());
@@ -82,6 +85,7 @@ public class AStarIDFS {
     		for(Node node : algorithm.findSchemeByHeuristic(workingNode.getBranches())){
     			node.getNode().printBoard();
     			System.out.println();
+    			przetworzone++;
     			lifo.add(node);
     		}
     		return 2;
